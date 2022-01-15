@@ -1,0 +1,31 @@
+.header-page {
+    display: flex;
+
+    .header-wrapper {
+        width: 50%;
+        height: 100vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        .header-navbar {
+            color: white;
+            padding: 2rem 2rem;
+            display: flex;
+
+            .navbar-logo {
+                font-size: 20px;
+                font-weight: 700;
+                margin-right: 3rem;
+            }
+            .navbar-menu {
+                padding-top: 0.5rem;
+                margin-right: 1rem;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .home-bloc {
+        width: 50%;
+    }
+}
