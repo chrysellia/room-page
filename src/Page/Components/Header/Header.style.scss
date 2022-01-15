@@ -1,87 +1,199 @@
 .header-page {
     display: flex;
 
-    .header-wrapper {
-        width: 70%;
-        background-size: cover;
-        background-repeat: no-repeat;
-
-
-        .header-navbar {
-            color: white;
-            padding: 2rem 2rem;
-            display: flex;
-
-            .navbar-logo {
-                font-size: 20px;
-                font-weight: 700;
-                margin-right: 3rem;
+    .desktop-design {
+        .header-wrapper {
+            width: 70%;
+            background-size: cover;
+            background-repeat: no-repeat;
+    
+    
+            .header-navbar {
+                color: white;
+                padding: 2rem 2rem;
+                display: flex;
+    
+                .navbar-logo {
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-right: 3rem;
+                }
+                .navbar-menu {
+                    padding-top: 0.5rem;
+                    margin-right: 1rem;
+                    font-size: 12px;
+                    cursor: pointer;
+    
+                    &:hover {
+                        border-bottom: 3px solid white;
+                    }
+                }
             }
-            .navbar-menu {
-                padding-top: 0.5rem;
-                margin-right: 1rem;
-                font-size: 12px;
-                cursor: pointer;
+        }
 
-                &:hover {
-                    border-bottom: 3px solid white;
+        .home-page {
+            width: 50%;
+    
+            .home-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        
+                .home-content {
+                    padding-top: 3rem;
+        
+                    .home-title {
+                        font-size: 30px;
+                        font-weight: 500;
+                    }
+            
+                    .home-description {
+                        color: hsl(0, 0%, 63%);
+                        font-size: 12px;
+                    }
+                }
+        
+                .home-button {
+                    display: flex;
+        
+                    .button-title {
+                        color: hsl(0, 0%, 27%);
+                        padding-bottom: 1rem;
+                        cursor: pointer;
+        
+                        &:hover {
+                            color: hsl(0, 0%, 63%);
+                        }
+                    }
+        
+                    .button-arrow {
+                        margin-left: 2rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+        
+            .button-slider {
+                display: flex;
+        
+                .button-wrapper {
+                    background-color: black;
+                    padding: 2rem 2rem;
+                    cursor: pointer;
+        
+                    &:hover {
+                        background-color: hsl(0, 0%, 27%);
+                    }
                 }
             }
         }
     }
+}
 
-    .home-page {
-        width: 50%;
+@media only screen and(max-width: 480px) {
+    .header-page {
+        display: flex;
+        flex-direction: column;
 
-        .home-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-    
-            .home-content {
-                padding-top: 3rem;
-    
-                .home-title {
-                    font-size: 30px;
-                    font-weight: 500;
-                }
+        .desktop-design {
+            display: none;
+        }
+
+        .mobile-design {
+            display: block;
+
+            .header-wrapper {
+                position: relative;
+                width: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
         
-                .home-description {
-                    color: hsl(0, 0%, 63%);
-                    font-size: 12px;
+        
+                .header-navbar {
+                    color: white;
+                    padding: 2rem 2rem;
+                    display: flex;
+        
+                    .navbar-hamburger {
+
+                    }
+
+                    .navbar-logo {
+                        font-size: 20px;
+                        font-weight: 700;
+                        margin-right: 3rem;
+                    }
+                    // .navbar-menu {
+                    //     padding-top: 0.5rem;
+                    //     margin-right: 1rem;
+                    //     font-size: 12px;
+                    //     cursor: pointer;
+        
+                    //     &:hover {
+                    //         border-bottom: 3px solid white;
+                    //     }
+                    // }
                 }
-            }
-    
-            .home-button {
-                display: flex;
-    
-                .button-title {
-                    color: hsl(0, 0%, 27%);
-                    padding-bottom: 1rem;
-                    cursor: pointer;
-    
-                    &:hover {
-                        color: hsl(0, 0%, 63%);
+                
+                .button-slider {
+                    position: absolute;
+                    display: flex;
+                    bottom: -4rem;
+                    right: 0rem;
+            
+                    .button-wrapper {
+                        background-color: black;
+                        padding: 1rem 1rem;
+                        cursor: pointer;
+            
+                        &:hover {
+                            background-color: hsl(0, 0%, 27%);
+                        }
                     }
                 }
-    
-                .button-arrow {
-                    margin-left: 2rem;
-                    cursor: pointer;
-                }
             }
-        }
     
-        .button-slider {
-            display: flex;
-    
-            .button-wrapper {
-                background-color: black;
-                padding: 2rem 2rem;
-                cursor: pointer;
-    
-                &:hover {
-                    background-color: hsl(0, 0%, 27%);
+            .home-page {
+                width: 100%;
+                margin: 3rem 3rem;
+        
+                .home-wrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+            
+                    .home-content {
+                        padding-top: 5rem;
+            
+                        .home-title {
+                            font-size: 30px;
+                            font-weight: 500;
+                        }
+                
+                        .home-description {
+                            color: hsl(0, 0%, 63%);
+                            font-size: 12px;
+                        }
+                    }
+            
+                    .home-button {
+                        display: flex;
+            
+                        .button-title {
+                            color: hsl(0, 0%, 27%);
+                            padding-bottom: 1rem;
+                            cursor: pointer;
+            
+                            &:hover {
+                                color: hsl(0, 0%, 63%);
+                            }
+                        }
+            
+                        .button-arrow {
+                            margin-left: 2rem;
+                            cursor: pointer;
+                        }
+                    }
                 }
             }
         }
