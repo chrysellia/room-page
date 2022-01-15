@@ -2,10 +2,10 @@
     display: flex;
 
     .header-wrapper {
-        width: 50%;
-        height: 100vh;
-        background-size: contain;
+        width: 70%;
+        background-size: cover;
         background-repeat: no-repeat;
+
 
         .header-navbar {
             color: white;
@@ -21,11 +21,69 @@
                 padding-top: 0.5rem;
                 margin-right: 1rem;
                 font-size: 12px;
+                cursor: pointer;
+
+                &:hover {
+                    border-bottom: 3px solid white;
+                }
             }
         }
     }
 
-    .home-bloc {
+    .home-page {
         width: 50%;
+
+        .home-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            .home-content {
+                padding-top: 3rem;
+    
+                .home-title {
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+        
+                .home-description {
+                    color: hsl(0, 0%, 63%);
+                    font-size: 12px;
+                }
+            }
+    
+            .home-button {
+                display: flex;
+    
+                .button-title {
+                    color: hsl(0, 0%, 27%);
+                    padding-bottom: 1rem;
+                    cursor: pointer;
+    
+                    &:hover {
+                        color: hsl(0, 0%, 63%);
+                    }
+                }
+    
+                .button-arrow {
+                    margin-left: 2rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    
+        .button-slider {
+            display: flex;
+    
+            .button-wrapper {
+                background-color: black;
+                padding: 2rem 2rem;
+                cursor: pointer;
+    
+                &:hover {
+                    background-color: hsl(0, 0%, 27%);
+                }
+            }
+        }
     }
 }
